@@ -1,0 +1,28 @@
+
+  307  cd /d
+  308  git clone https://github.com/karamelev/JSON.git
+  309  cd JSON/
+  310  cat >new.json
+  311  git add .
+  312  git commit -m "New faile json"
+  313  git push origin master
+  314  vim new.json 
+  315  git commit -am "save new fale"
+  316  ls -la
+  317  cat new.json 
+  318  git push origin master
+  319  cat >pteferences.json 
+  320  mv pteferences.json preferences.json 
+  321  vim preferences.json 
+  322  touch >skills.json 
+  323  cat >skills.json 
+  324  vim skills.json 
+  325  git add .
+  326  git commit -m "two new files"
+  327  git diff --staged
+  328  git push 
+  329  git log
+  330  git pull
+  331  ls -la
+  332  history
+  333  history >> hist.txt

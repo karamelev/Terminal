@@ -1,0 +1,5 @@
+      favorite movie: "Тот самый Мюнхаузен",
+	favorite sirial:"Ошибка резидента",
+	favorite food: "Шашлык",
+	favorite season: "Sanny",
+	favorite country: "Greek"
