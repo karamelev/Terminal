@@ -11,8 +11,8 @@
   402  cat >tf_3.txt
   403  cat >>tf_3.txt
   404  cat >>tf_2.txt
-  405  cat >>tf_3.txt
-  406  cat >>tf_2.txt
+  405  cat >>./inner_dir_1/tf_3.txt
+  406  cat >>./tf_2.txt
   407  cat >tf_4.txt
   408  cat >tf_5.txt
   409  ls -la
@@ -21,21 +21,19 @@
   423  find $(pwd) -name tf_4.txt
   424  realpath tf_4.txt
   434  cp /dev/null inner_dir_1/tf_4.txt
-  447  find . -type f -name "*tf*"
-  448 find . -type f -iname "*tf*"
+  447  find -type f -name "*tf*"
+  448 find -type f -iname "*tf*"
   458  grep -r sec
   459  grep -r -i sec
   460  grep -r -w sec
   461  grep -r -w -i sec
-  466  grep -r second
-  467  grep -r -i second
+  466  grep second ./*
+  467  grep -i second ./*
   468  cd ..
   469  grep -r  second .
-  470  grep -r -l second 
-  476  grep -r [^sec]
-  478  grep -r -l [^sec]
-  479  tail -n4 tf_5/txt
-  480  tail -n4 tf_5.txt
+  470  grep -l second ./*
+  476  grep -r -v second
+  478  grep -r -v -l second
   481  cd ..
   482  tail -n4 inner_dir_1/tf_5.txt
   483  head -n4 inner_dir_1/tf_5.txt
