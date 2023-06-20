@@ -21,8 +21,8 @@
   423  find $(pwd) -name tf_4.txt
   424  realpath tf_4.txt
   434  cp /dev/null inner_dir_1/tf_4.txt
-  447  find -type f -name "*tf*"
-  448 find -type f -iname "*tf*"
+  447  find . -type f -name "*tf*"
+  448 find . -type f -iname "*tf*"
   458  grep -r sec
   459  grep -r -i sec
   460  grep -r -w sec
