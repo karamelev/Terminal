@@ -1,0 +1,69 @@
+   
+  307  cd /d
+  308  git clone https://github.com/karamelev/JSON.git
+  309  cd JSON/
+  310  cat >new.json
+  311  git add .
+  312  git commit -m "New faile json"
+  313  git push origin master
+  314  vim new.json 
+  315  git commit -am "save new fale"
+  316  ls -la
+  317  cat new.json 
+  318  git push origin master
+  319  cat >pteferences.json 
+  320  mv pteferences.json preferences.json 
+  321  vim preferences.json 
+  323  cat >skills.json 
+  324  vim skills.json 
+  325  git add .
+  326  git commit -m "two new files"
+  327  git diff --staged
+  328  git push 
+  329  git log
+  330  git pull
+  331  ls -la
+  332  history
+  333  history >> hist.txt
+  334  cat hist.txt
+  335  vim hist.txt
+  336  git add hist.txt
+  337  git commit -m "hist"
+  338  git push
+  339  cd /d 
+  341  git clone https://github.com/karamelev/XML.git
+  342  cd XML
+  343  cat >new.xml
+  344  git add new.xml
+  345  git commit -m "new xml file"
+  346  git push
+  347  cat new.xml
+  348  git add new.xml
+  349  git commit -m "person" 
+  350  git push
+  351  cat >preferences.xml 
+  352  cat >skills.xml
+  353  git add .
+  354  git commit -m "new files"
+  355  git restor
+  356  git push
+  357  git pull
+  359  cd ..
+  360  git clone https://github.com/karamelev/TXT.git
+  361  cd TXT
+  362  cat >new.txt
+  363  cat >>new.txt
+  364  git add new.txt
+  365  git commit -m"new.txt"
+  366  git push
+  367  cat >> preferences.txt
+  368  cat preferences.txt 
+  369  vim preferences.txt 
+  370  cat >skills.txt
+  371  vim skills.txt 
+  372  git add .
+  373  git commit -m "two files" 
+  374  git push
+  375  git pull
+  376  history
+  377  history >>hist.txt
